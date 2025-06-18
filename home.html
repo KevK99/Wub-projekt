@@ -1,16 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careli GmbH</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .section {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+    }
+    .section h2 {
+      color: #ff9800;
+      margin-bottom: 10px;
+      font-size: 1.8em;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      background: linear-gradient(135deg, #ff9800, #ff5722);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 15px;
+      box-sizing: border-box;
+    }
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(255, 152, 0, 0.6);
+    }
+    ul {
+      list-style: disc inside;
+      padding-left: 15px;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      background: #1e1e1e;
+      flex-wrap: wrap;
+    }
+    footer a {
+      padding: 10px 20px;
+      background: #333;
+      border-radius: 6px;
+      color: #f0f0f0;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    footer a:hover {
+      background: #555;
+    }
+    @media (max-width: 600px) {
+      .section h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 <body>
-    Text A
-    <div id="body">
-
+  <main>
+    <div class="section">
+      <h2>Über Careli GmbH</h2>
+      <p>
+        Die <strong>Careli GmbH</strong> mit Sitz in Aachen ist seit 2005 Spezialist für hochwertige Serverschränke im IT-Sektor.
+        Unsere Produkte sind für <strong>Premiumkunden</strong>, <strong>Rechenzentren</strong> und <strong>IT-Dienstleister</strong> gedacht,
+        die auf höchste Qualität und innovative Technik setzen.
+      </p>
     </div>
+    <div class="section">
+      <h2>Vision & Ziele</h2>
+      <ul>
+        <li>Marktführer für Premium-Serverschränke in Deutschland</li>
+        <li>Maßstäbe in Design, Sicherheit und Effizienz</li>
+        <li>Umweltfreundliche und ressourcenschonende Produktion</li>
+      </ul>
+    </div>
+    <a href="#" class="button">Produkte ansehen</a>
+  </main>
+  <footer>
+    <a href="#">AGBs</a>
+    <a href="#">Impressum</a>
+  </footer>
 </body>
 </html>
